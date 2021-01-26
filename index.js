@@ -29,8 +29,6 @@ async function startBotPlayMatch(browser) {
     await page.waitFor(5000);
     await page.reload();
     await page.waitFor(5000);
-    await page.click('#play-now-btn')[0];
-    await page.waitFor(5000);
 
     await page.click('#menu_item_battle');
 
