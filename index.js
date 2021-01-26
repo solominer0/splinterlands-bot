@@ -27,6 +27,10 @@ async function startBotPlayMatch(browser) {
     await page.waitFor(5000);
     await page.reload();
     await page.waitFor(5000);
+    await page.reload();
+    await page.waitFor(5000);
+    await page.click('#play-now-btn')[0];
+    await page.waitFor(5000);
 
     await page.click('#menu_item_battle');
 
@@ -42,7 +46,7 @@ async function startBotPlayMatch(browser) {
         console.log('no quest reward')
     }
 
-    await page.waitFor(3000);
+    await page.waitFor(30000);
 
     // LAUNCH the battle
     await page.waitForXPath("//button[contains(., 'BATTLE')]", { timeout: 10000 })
@@ -135,7 +139,7 @@ async function startBotPlayMatch(browser) {
 
 }
 
-cron.schedule('*/15 * * * *', async () => {
+cron.schedule('*/7 * * * *', async () => {
     const browser = await puppeteer.launch({ headless: false });
     try {
         await startBotPlayMatch(browser);
