@@ -15,4 +15,4 @@ Create .env text file with the above in the working directory of the splinterlan
 
 
 https://peakd.com/hive-13323/@solominer/set-up-my-own-splinterlands-bots
-^ Blog post about my experience using the bot, and some of the changes I have made. ^
+
