@@ -137,7 +137,7 @@ async function startBotPlayMatch(browser) {
 
 }
 
-cron.schedule('*/7 * * * *', async () => {
+cron.schedule('*/14 * * * *', async () => {
     const browser = await puppeteer.launch({ headless: false });
     try {
         await startBotPlayMatch(browser);
