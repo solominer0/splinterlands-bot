@@ -8,7 +8,7 @@ Changes have been made to resolve package conflicts, and to resolve script time 
 
 run `npm start index.js`
 
-to start BOT login routine. username and password needs to be specified in the file .env in the root as variable like:
+to start BOT login routine. username and password needs to be specified in the file .env as variable like:
 `ACCOUNT=yourhiveusername
 PASSWORD=yourhiveprivatepostingkey`
 Create .env text file with the above in the working directory of the splinterlands bot and add .env text file to .gitignore
